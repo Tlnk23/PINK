@@ -24,15 +24,105 @@
 
     <main class="page-main">
         <p class="page-main__header-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        <section class="page-main__name-from name-from">
-            <ul class="name-form__list">
-                <li class="name-form__element">
-                    <p class="name-from__header-text">Фамилия</p>
-                    <input type="text">
-                </li>
-            </ul>
-        </section>
+        <form class="page-main__main-form" action="https://echo.htmlacademy.ru" method="POST"> 
+            <section class="page-main__name-from name-from">
+                <ul class="name-form__form-list">
+                    <li class="name-form__form-element form-element">
+                        <label for="form-element__surname" class="form-element__text">Фамилия:</label>
+                        <input type="text" name="surname" id="form-element__surname" placeholder="Укажите фамилию *">
+                    </li>
+                    <li class="name-form__form-element form-element">
+                        <label for="form-element__name" class="form-element__text">Имя:</label>
+                        <input type="text" name="name" id="form-element__name" placeholder="Введите ваше имя *">
+                    </li>
+                    <li class="name-form__form-element form-element">
+                        <label for="form-element__patronymic" class="form-element__text">Отчество:</label>
+                        <input type="text" name="patronymic" id="form-element__patronymic" placeholder="Ну и отчество тоже">
+                    </li>
+                </ul>
+            </section>
+
+            <fieldset class="page-main__achivements-form achivements-form">
+                <legend class="achivements-form__text">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="achivements-form__list">
+                    <li class="achivements-form__element">
+                        <input class="achivements-form__checkbox" type="checkbox" name="selfie-with-shark" id="achivements-form__selfie-with-shark">
+                        <label for="achivements-form__selfie-with-shark" class="achivements-form__label">Сделал селфи с акулой</label> 
+                    </li>
+                    <li class="achivements-form__element">
+                        <input class="achivements-form__checkbox" type="checkbox" name="got-burned" id="achivements-form__got-burned">
+                        <label for="achivements-form__got-burned" class="achivements-form__label">Обгорел на пляже</label>
+                    </li>
+                    <li class="achivements-form__element">
+                        <input class="achivements-form__checkbox" type="checkbox" name="Chuck-Norris" id="achivements-form__Chuck-Norris">
+                        <label for="achivements-form__Chuck-Norris" class="achivements-form__label">Видел Чака Норриса</label> 
+                    </li>
+                    <li class="achivements-form__element">
+                        <input class="achivements-form__checkbox" type="checkbox" name="souvenir" id="achivements-form__souvenir">
+                        <label for="achivements-form__souvenir" class="achivements-form__label">Накупил сувениров</label> 
+                    </li>
+                    <li class="achivements-form__element">
+                        <input class="achivements-form__checkbox" type="checkbox" name="hold-tower" id="achivements-form__hold-tower">
+                        <label for="achivements-form__hold-tower" class="achivements-form__label">Удержал башню</label> 
+                    </li>
+                    <li class="achivements-form__element">
+                        <input class="achivements-form__checkbox" type="checkbox" name="trashed-hotel" id="achivements-form__trashed-hotel">
+                        <label for="achivements-form__trashed-hotel" class="achivements-form__label">Разгромил отель</label> 
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="page-main__feedback-form feedback-form">
+                <ul class="feedback-form__list">
+                    <li class="feedback-form__element">
+                        <label for="feedback-form__phone-number" class="feedback-form__label" name="phone-number">НОМЕР ТЕЛЕФОНА</label>
+                        <input type="text" id="feedback-form__phone-number" class="feedback-form__input" placeholder="Номер, пожалуйста">
+                    </li>
+                    <li class="feedback-form__element">
+                        <label for="feedback-form__email" class="feedback-form__label">АДРЕС ПОЧТЫ</label>
+                        <input type="text" id="feedback-form__email" class="feedback-form__input" name="email" placeholder="Введите почту *">
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset class="page-main__os-form os-form">
+                <p class="os-form__text"></p>
+                    <li>
+                        <input class="os-from__radio-button" type="radio" id="pink-ios" name="os-selection">
+                        <label for="pink-ios" class="form-element__label">Pink для iOS</label>
+                    </li>
+                    <li>
+                        <input class="os-from__radio-button" type="radio" id="pink-android" name="os-selection">
+                        <label for="pink-android" class="form-element__label">Pink на Android</label>
+                    </li>
+                    <li>
+                        <input class="os-from__radio-button" type="radio" id="pink-windows" name="os-selection">
+                        <label for="pink-windows" class="form-element__label">Windows Phone</label>
+                    </li>
+            </fieldset>
+
+            <fieldset class="page-main__message-form message-form">
+                <label for="message" class="message-form__label">Опишите свои эмоции</label>
+                <input type="text" class="message-form__letter" name="message-letter" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            </fieldset>
+        
+            <button type="submit" class="page-main__button">Отправить форму</button>
+            <p class="page-main__text"><p class="page-main__text--pink">*</p> — обязательные поля</p>
+        </form>   
     </main>
+
+    <footer class="page-footer">
+        <img src="" alt="" class="page-footer__logo">
+        <ul class="page-footer__social-list">
+            <li class="page-footer__social-icon"><img src="" alt="" class="page-footer__social-icon--twitter"></li>
+            <li class="page-footer__social-icon"><img src="" alt="" class="page-footer__social-icon--facebook"></li>
+            <li class="page-footer__social-icon"><img src="" alt="" class="page-footer__social-icon--youtube"></li>
+        </ul>
+        <div class="page-footer__copyright">
+            <p class="page-footer__text">Разработано</p>
+            <img src="" alt="" class="page-footer__htmlacademy-img">
+        </div>
+    </footer>
 
 </body>
 </html>
